@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C0A2FC91CDFBE12006F610A /* demo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4C0A2FC81CDFBE12006F610A /* demo.mp4 */; };
 		4CA66F131CDF94EE00112434 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA66F121CDF94EE00112434 /* main.m */; };
 		4CA66F161CDF94EE00112434 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA66F151CDF94EE00112434 /* AppDelegate.m */; };
 		4CA66F191CDF94EE00112434 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA66F181CDF94EE00112434 /* ViewController.m */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C0A2FC81CDFBE12006F610A /* demo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = demo.mp4; sourceTree = "<group>"; };
 		4CA66F0E1CDF94EE00112434 /* 360PlayerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 360PlayerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CA66F121CDF94EE00112434 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4CA66F141CDF94EE00112434 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 		4CBDE20E1CDF9B00000ED579 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4C0A2FC81CDFBE12006F610A /* demo.mp4 */,
 				4CBDE2101CDF9B2E000ED579 /* Shader.fsh */,
 				4CBDE2111CDF9B2E000ED579 /* Shader.vsh */,
 			);
@@ -172,6 +175,7 @@
 				4CA66F1E1CDF94EE00112434 /* Assets.xcassets in Resources */,
 				4CBDE2141CDF9B2E000ED579 /* Shader.vsh in Resources */,
 				4CBDE2131CDF9B2E000ED579 /* Shader.fsh in Resources */,
+				4C0A2FC91CDFBE12006F610A /* demo.mp4 in Resources */,
 				4CA66F1C1CDF94EE00112434 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
