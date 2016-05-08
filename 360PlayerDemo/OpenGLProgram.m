@@ -12,13 +12,14 @@
 @implementation OpenGLProgram
 
 - (id)initWithVertexFilepath:(NSString *)shaderFilename fragmentShaderFilename:(NSString *)fShaderFilename {
+    self = [super init];
+    
     NSString *vertShaderPathname = [[NSBundle mainBundle] pathForResource:shaderFilename ofType:@"vsh"];
     NSString *vertexShaderString = [NSString stringWithContentsOfFile:vertShaderPathname encoding:NSUTF8StringEncoding error:nil];
     
     NSString *fragShaderPathname = [[NSBundle mainBundle] pathForResource:fShaderFilename ofType:@"fsh"];
     NSString *fragmentShaderString = [NSString stringWithContentsOfFile:fragShaderPathname encoding:NSUTF8StringEncoding error:nil];
     
-    self = [super init];
     if (self) {
         _attributes = [[NSMutableArray alloc] init];
         _uniforms = [[NSMutableArray alloc] init];

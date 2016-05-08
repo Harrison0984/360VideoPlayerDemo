@@ -26,8 +26,6 @@ enum {
     UNIFORM_COLOR_CONVERSION_MATRIX,
     NUM_UNIFORMS
 };
-GLint uniforms[NUM_UNIFORMS];
-
 
 @interface VideoPlayerViewController () {
     GLKMatrix4 modelViewProjectionMatrix;
@@ -52,6 +50,8 @@ GLint uniforms[NUM_UNIFORMS];
     CVOpenGLESTextureCacheRef videoTextureCache;
     
     const GLfloat *preferredConversion;
+    
+    GLint uniforms[NUM_UNIFORMS];
 }
 
 @property (strong, nonatomic) EAGLContext *context;
