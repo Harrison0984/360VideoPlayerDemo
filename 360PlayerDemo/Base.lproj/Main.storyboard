@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Player View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="PlayerViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="PlayerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gIG-2m-JGR">
+                                <rect key="frame" x="274" y="274" width="52" height="52"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DVq-ot-Xqe">
+                                        <rect key="frame" x="11" y="11" width="30" height="30"/>
+                                        <state key="normal" title="开始"/>
+                                        <connections>
+                                            <action selector="playButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BZk-Fl-1Pc"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="DVq-ot-Xqe" firstAttribute="centerY" secondItem="gIG-2m-JGR" secondAttribute="centerY" id="RvO-WH-2l4"/>
+                                    <constraint firstAttribute="height" constant="52" id="e93-sy-SnB"/>
+                                    <constraint firstAttribute="width" constant="52" id="gck-cH-LfZ"/>
+                                    <constraint firstItem="DVq-ot-Xqe" firstAttribute="centerX" secondItem="gIG-2m-JGR" secondAttribute="centerX" id="gmw-ZG-R1P"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gIG-2m-JGR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="OZl-FC-OyN"/>
+                            <constraint firstItem="gIG-2m-JGR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eKJ-WT-PRe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="playButton" destination="DVq-ot-Xqe" id="seR-nb-Xqv"/>
+                        <outlet property="playerControlBackgroundView" destination="gIG-2m-JGR" id="pGW-Y0-5fA"/>
+                        <outlet property="view" destination="8bC-Xf-vdC" id="Xfo-zj-Pe9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="415" y="316"/>
+        </scene>
+    </scenes>
+</document>
